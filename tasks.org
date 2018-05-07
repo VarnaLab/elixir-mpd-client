@@ -1,0 +1,6 @@
+* Tasks
+- [ ] Organizing the socket communication - Veacheslav
+- [ ] Creating the web interface - Krasimir
+- [ ] Communication with mpd server - Valentin
+- [ ] Communication with moc server - Georgi
+- [ ] Creating GenServer for communication with the music server (whichever it is)
