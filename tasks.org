@@ -1,6 +1,6 @@
 * Tasks
-** TODO Organizing the socket communication
-** TODO Creating the web interface
-** TODO Communication with mpd server
-** TODO Communication with moc server
-** TODO Creating GenServer for communication with the music server (whichever it is)
+- [ ] Organizing the socket communication - Veacheslav
+- [ ] Creating the web interface - Krasimir
+- [ ] Communication with mpd server - Valentin
+- [ ] Communication with moc server - Georgi
+- [ ] Creating GenServer for communication with the music server (whichever it is)
