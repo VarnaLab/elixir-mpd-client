@@ -54,9 +54,17 @@ let socket = new Socket("/socket", {params: {token: window.userToken}})
 socket.connect()
 
 // Now that you are connected, you can join channels with a topic:
-let channel = socket.channel("topic:subtopic", {})
+let channel = socket.channel("media_player:lobby", {})
 channel.join()
   .receive("ok", resp => { console.log("Joined successfully", resp) })
   .receive("error", resp => { console.log("Unable to join", resp) })
+  
+function action(param = "play"){
+    channel.push('action', { // send the message to the server on "shout" channel
+      name: "action",     // get value of "name" of person sending the message
+      message: param    // get message text (value) from msg input field.
+    });
+}
+action();
 
 export default socket

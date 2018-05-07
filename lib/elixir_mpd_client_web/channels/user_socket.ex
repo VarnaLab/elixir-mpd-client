@@ -2,7 +2,7 @@ defmodule ElixirMpdClientWeb.UserSocket do
   use Phoenix.Socket
 
   ## Channels
-  # channel "room:*", ElixirMpdClientWeb.RoomChannel
+   channel "media_player:lobby", ElixirMpdClientWeb.MediaPlayerChannel
 
   ## Transports
   transport :websocket, Phoenix.Transports.WebSocket
