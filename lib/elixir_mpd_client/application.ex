@@ -12,6 +12,7 @@ defmodule ElixirMpdClient.Application do
       supervisor(ElixirMpdClientWeb.Endpoint, []),
       # Start your own worker by calling: ElixirMpdClient.Worker.start_link(arg1, arg2, arg3)
       # worker(ElixirMpdClient.Worker, [arg1, arg2, arg3]),
+      {ElixirMpdServer.MpdServer, []}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
