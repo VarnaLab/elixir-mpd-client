@@ -17,13 +17,13 @@ defmodule ElixirMpdClientWeb.MediaPlayerChannel do
 
   # It is also common to receive messages from the client and
   # broadcast to everyone in the current topic (media_player:lobby).
-  #def handle_in("shout", payload, socket) do
+  # def handle_in("shout", payload, socket) do
   #  broadcast socket, "shout", payload
   #  {:noreply, socket}
-  #end
+  # end
 
   def handle_in("action", payload, socket) do
-    broadcast socket, "action", payload
+    broadcast(socket, "action", payload)
     {:noreply, socket}
   end
 
